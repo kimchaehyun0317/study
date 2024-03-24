@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR";
+}
+
+a {
+  text-decoration: none;
+}
+
+.community {
+  width: 100%;
+}
+
+.community .inner {
+  width: 1180px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.community .inner .center-line {
+  width: 2px;
+  height: 100%;
+  background-color: #e2e2e2;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.community .inner .scroll-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: #00504f;
+  z-index: 1;
+}
+
+.community .inner .his-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.community .inner .his-list .row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.community .inner .his-list .row > span {
+  width: 50%;
+  line-height: 0.5;
+  font-weight: 600;
+  font-size: 50px;
+  color: #00504f;
+}
+
+.community .inner .his-list .row-1 > span {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.community .inner .his-list .row-2 > span {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.community .inner .his-list .row .depth2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.community .inner .his-list .row .depth2 li {
+  display: flex;
+  align-items: center;
+}
+
+.community .inner .his-list .row-2 .depth2 li {
+  flex-direction: row-reverse;
+}
+
+.community .inner .his-list .row .depth2 li b {
+  font-size: 20px;
+  color: #333;
+}
+
+.community .inner .his-list .row-1 .depth2 li b {
+  padding-left: 80px;
+}
+
+.community .inner .his-list .row-2 .depth2 li b {
+  padding-right: 80px;
+}
+
+.community .inner .his-list .row .depth2 li:nth-child(1) b {
+  position: relative;
+}
+
+.community .inner .his-list .row .depth2 li:nth-child(1) b::before {
+  content: " ";
+  z-index: 1;
+  background-image: url(https://www.nbbio.co.kr/asset/img/sub/company/history_circle.svg);
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+}
+
+.community .inner .his-list .row-1 .depth2 li:nth-child(1) b::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.community .inner .his-list .row-2 .depth2 li:nth-child(1) b::before {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+
+.community .inner .his-list .row .depth2 li:nth-child(1) b::after {
+  content: " ";
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #00504f;
+}
+
+.community .inner .his-list .row-1 .depth2 li:nth-child(1) b::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.community .inner .his-list .row-2 .depth2 li:nth-child(1) b::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.community .inner .his-list .row .depth2 li span {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.3;
+}
+
+.community .inner .his-list .row-1 .depth2 li span {
+  padding-left: 10px;
+}
+
+.community .inner .his-list .row-2 .depth2 li span {
+  padding-right: 10px;
+}
+
+.community .inner .his-list .row-2 {
+  flex-direction: row-reverse;
+}
+
+/* 구글 아이콘이 뭐가 문제인지 사이즈가 조절이 안돼서 그냥 만들었습니다. */
+
+#arrow {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+#arrow::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #00504f;
+  border-right: 2px solid #00504f;
+  transform: rotate(315deg);
+  position: fixed;
+  right: 60px;
+  bottom: 30px;
+}
+
+/* 선생님 항상 좋은 강의 감사합니다. html나 css가 약간 지저분한 이유는 선생님과
+같이 만든 샘플과 제가 따라하려고 하는 레퍼런스를 섞다보니 이렇게 되었습니다. 나름 정리한다고 헸는데 아직 정리가 되지않은 부분이 있을 수 있습니다. ㅎㅎㅎ  */
